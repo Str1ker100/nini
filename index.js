@@ -35,7 +35,7 @@ BOT COMMANDS
 });
 
 client.on('message', message => {
-    if (message.author.id == '419472407816830986') {
+    if (message.author.id == '484703510919905291') {
     if (message.content.startsWith(`f!restart`)) {
             resetBot(message.channel);
     }
