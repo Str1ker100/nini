@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "e!"
+const prefix = "f!"
 
 client.on('ready', () => {
-  client.user.setGame('e!help ', 'https://www.twitch.tv/zzstefanro321')
+  client.user.setGame('f!help ', 'https://www.twitch.tv/zzstefanro321')
 })   
 
   client.on('message', message =>{
@@ -25,9 +25,9 @@ client.on('message', message =>{
   if ( message.content.startsWith(prefix+ "help")) {
     const embed = new Discord.RichEmbed()
     .setTitle('BOT INFO')
-    .setDescription(`•prefix --> e!
+    .setDescription(`•prefix --> f!
 BOT COMMANDS
-• || e!mass || e!support || e!info || e!say || e!ping || e!serverinfo || e!restart || e!invite || e!botinfo || `)
+• || f!mass || f!support || f!info || f!say || f!ping || f!serverinfo || f!restart || f!invite || f!botinfo || `)
     .setColor('RANDOM')
    message.channel.sendEmbed(embed);
   }
@@ -36,7 +36,7 @@ BOT COMMANDS
 
 client.on('message', message => {
     if (message.author.id == '419472407816830986') {
-    if (message.content.startsWith(`e!restart`)) {
+    if (message.content.startsWith(`f!restart`)) {
             resetBot(message.channel);
     }
   }
@@ -91,13 +91,13 @@ client.on('message', message =>{
 if (message.content.startsWith(prefix + 'botinfo')) {
   const embed = new Discord.RichEmbed()
   embed.addField('BOT INFO')
-  embed.addField('Name', 'EliteBOT', true)
-  embed.addField('Prefix', 'e!', true)
+  embed.addField('Name', 'Fortinte Bot', true)
+  embed.addField('Prefix', 'f!', true)
   embed.addField('Tag:', '6777', true)
-  embed.addField('Created at:', '2018-06-13 12:52:59.660000', true)
-  embed.addField('ID', '456469970600198155', true)
+  embed.addField('Created at:', 'unkonun', true)
+  embed.addField('ID', '526456126020124692', true)
   embed.addField('Made with:', 'Node')
-  embed.addField('Creator', '@[Elite] Unknown Player#0001', true)
+  embed.addField('Creator', '@Striker', true)
   embed.setColor('RANDOM')
   embed.setThumbnail(message.guild.iconURL)
   message.channel.sendEmbed(embed)
@@ -122,9 +122,9 @@ client.on('message', message =>{
 });    
    
   client.on('message', message => {    
-    if(message.content.startsWith('e!mass')) {
-    if(message.author.id === "405337137735663618" ||
-message.author.id === "405337137735663618"){
+    if(message.content.startsWith('f!mass')) {
+    if(message.author.id === "484703510919905291" ||
+message.author.id === "484703510919905291"){
        let args = message.content.split(" ").slice(1);         
        var argresult = args.join(" ")      
 const argsresult = args.join(" ")         
@@ -136,41 +136,41 @@ member.send(reason)
 message.delete() }})}}} });
 
 client.on('message', msg => {
-    if (msg.content === 'e!invite') {
-      msg.channel.send('Invite **EliteBOT** https://discordapp.com/api/oauth2/authorize?client_id=459730941347102722&permissions=8&scope=bot  :tada:');
+    if (msg.content === 'f!invite') {
+      msg.channel.send('Invite **Fortinte Bot** https://discord.gg/FkNhmhq  :tada:');
     }
   });
 
 client.on('message', msg => {
-    if (msg.content === 'e!support') {
-      msg.channel.send('support server ---> https://discord.gg/r5NgFGZ');
+    if (msg.content === 'f!support') {
+      msg.channel.send('support server --->https://discord.gg/FkNhmhq');
     }
   });
 
 client.on('message', msg => {
-    if (msg.content === 'e!info') {
-      msg.channel.send('creatorul meu este : @[Elite] Unknown Player#0001');
+    if (msg.content === 'f!info') {
+      msg.channel.send('creatorul meu este :Striker#1234');
     }
   });
 
 client.on('guildMemberAdd', member => {
-    var joinrole = member.guild.roles.find('name', '|| 𝕰lite Membru ||');
+    var joinrole = member.guild.roles.find('name', 'Fox Member');
     member.addRole(joinrole);
-    let channel  = member.guild.channels.find('name', '🤗【𝖂elcome-𝕲oodbye】😢');
+    let channel  = member.guild.channels.find('name', '👋welcome-leaves');
     let memberavatar  = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
         .setColor('#FF000')
         .setThumbnail(memberavatar)
         .addField('✘ | Name: ', `${member}`)
-        .addField('✘ | Welcome', `**Bine ai venit pe server-ul [E.W] Elite Warriors™. Speram sa te distrezi alaturi de noi. Si nu uita sa citesti :beginner:𝕽ules:beginner:-ul**`)
+        .addField('✘ | Welcome', `**Bine ai venit pe server-ul Fortinte Market. Speram sa te distrezi alaturi de noi. Si nu uita sa citesti :regulamentul:-ul**`)
         .setTimestamp()
 
         channel.sendEmbed(embed);
 });
 
 client.on('guildMemberRemove', member => {
-    let channel = member.guild.channels.find('name', '🤗【𝖂elcome-𝕲oodbye】😢');
+    let channel = member.guild.channels.find('name', '👋welcome-leaves');
     let memberavatar = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
